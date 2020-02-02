@@ -1,0 +1,26 @@
+@import "../../core/scss/variables";
+
+$gutter: 20px;
+
+li {
+  margin-bottom: $gutter;
+}
+
+@media (min-width: $min-tab) {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$gutter;
+  }
+
+  li {
+    width: calc((100% - (2 * #{$gutter})) / 2);
+    margin-right: $gutter;
+  }
+}
+
+@media (min-width: $min-desk) {
+  li {
+    width: calc((100% - (3 * #{$gutter})) / 3);
+  }
+}

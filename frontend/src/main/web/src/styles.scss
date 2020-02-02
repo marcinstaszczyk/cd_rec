@@ -1,0 +1,8 @@
+@import "src/app/core/scss/variables";
+@import "reset";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $font-regular;
+  font-weight: normal;
+}
